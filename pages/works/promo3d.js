@@ -26,7 +26,7 @@ const promo3d = () => {
                             <p className='font-lg fw-bold custom-text'>Broken - Promo</p>
                         </div>
                         <div className="col-6-xs">
-                            <p className='custom-text'>Basically, this video shows that I'm available for work.</p>
+                            <p className='custom-text'>{`Basically, this video shows that I'm available for work.`}</p>
                         </div>
                     </div>
                 </div>

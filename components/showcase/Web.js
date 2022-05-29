@@ -14,7 +14,7 @@ const Web = () => {
                 </div>
                 <div className="col-4-xs">
                     <img src="web/allen.png" alt="cover-1" className="thumb-cover br-base" />
-                    <p className="custom-text font-lg fw-md pt-1"><span className="pointer custom-misc-hover">Allen's Bots</span></p>
+                    <p className="custom-text font-lg fw-md pt-1"><span className="pointer custom-misc-hover">{`Allen's Bots`}</span></p>
                     <p className="custom-sub-text ls-0">An E-Commerce site for a client.</p>
                 </div>
             </div>

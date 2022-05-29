@@ -58,10 +58,10 @@ export default function Home() {
                         </div>
                         <div className="col-6-xs">
                             <div className="row ml-1 gap-1">
-                                <div className="col-6-xs"><p className='font-lg'><a href='https://twitter.com/TheBroken_XD' target="_blank" className='custom-sub-text custom-text-hover'>Twitter</a></p></div>
-                                <div className="col-6-xs"><p className='font-lg'><a href='https://www.instagram.com/thebroken_xd/' target="_blank" className='custom-sub-text custom-text-hover'>Instagram</a></p></div>
-                                <div className="col-6-xs"><p className='font-lg'><a href='https://discordapp.com/users/846291281746329601' target="_blank" className='custom-sub-text custom-text-hover'>Discord</a></p></div>
-                                <div className="col-6-xs"><p className='font-lg'><a href='https://github.com/TheBrokenXD' target="_blank" className='custom-sub-text custom-text-hover'>Github</a></p></div>
+                                <div className="col-6-xs"><p className='font-lg'><a href='https://twitter.com/TheBroken_XD' target="_blank" rel="noreferrer" className='custom-sub-text custom-text-hover'>Twitter</a></p></div>
+                                <div className="col-6-xs"><p className='font-lg'><a href='https://www.instagram.com/thebroken_xd/' target="_blank" rel="noreferrer" className='custom-sub-text custom-text-hover'>Instagram</a></p></div>
+                                <div className="col-6-xs"><p className='font-lg'><a href='https://discordapp.com/users/846291281746329601' target="_blank" rel="noreferrer" className='custom-sub-text custom-text-hover'>Discord</a></p></div>
+                                <div className="col-6-xs"><p className='font-lg'><a href='https://github.com/TheBrokenXD' target="_blank" rel="noreferrer" className='custom-sub-text custom-text-hover'>Github</a></p></div>
                             </div>
                         </div>
                     </div>

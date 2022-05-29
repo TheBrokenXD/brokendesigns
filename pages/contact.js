@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 // components
 import Navbar from '../components/Navbar';
 
-const contact = () => {
+const Contact = () => {
 
     const toastRef = useRef();
 
@@ -103,4 +103,4 @@ const contact = () => {
     );
 }
  
-export default contact;
+export default Contact;

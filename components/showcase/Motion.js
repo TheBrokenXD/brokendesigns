@@ -27,7 +27,7 @@ const Motion = () => {
                 <div className="col-4-xs">
                     <Link href="/works/valentine"><img src="index-thumbnail/valentine.png" alt="cover-1" className="thumb-cover br-base" /></Link>
                     <p className='custom-text font-lg fw-md pt-1'><Link href="/works/valentine"><span className='pointer custom-misc-hover'>Valentine</span></Link></p>
-                    <p className="custom-sub-text ls-0">A little gif I made for valentine's day.</p>
+                    <p className="custom-sub-text ls-0">{`A little gif I made for valentine's day.`}</p>
                 </div>
                 <div className="col-4-xs">
                     <Link href="/works/soon"><img src="index-thumbnail/soon.png" alt="cover-1" className="thumb-cover br-base" /></Link>
