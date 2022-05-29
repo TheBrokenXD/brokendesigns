@@ -2,7 +2,7 @@ import Head from 'next/head'
 // components
 import Navbar from '../../components/Navbar';
 import Graphic from '../../components/showcase/Graphic';
-import Motion from '../../components/showcase/motion';
+import Motion from '../../components/showcase/Motion';
 import Web from '../../components/showcase/Web';
 
 const works = () => {
