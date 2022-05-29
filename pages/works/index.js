@@ -6,7 +6,7 @@ import Graphic from '../../components/showcase/Graphic';
 import Motion from '../../components/showcase/Motion';
 import Web from '../../components/showcase/Web';
 
-const works = () => {
+const Works = () => {
     
 
     const motion = useRef(null);
@@ -71,4 +71,4 @@ const works = () => {
     );
 }
  
-export default works;
+export default Works;
