@@ -54,7 +54,7 @@ export default function Home() {
 
                     <div className="row mt-6 mb-2">
                         <div className="col-6-xs">
-                            <p className='custom-text font-xl'><span className='pointer'>contact@broken.com</span><span className="font-lg custom-text pl-2 pointer"><FontAwesomeIcon icon={faLocationArrow} /></span></p>
+                            <p className='custom-text font-xl'><a href="mailto:broken.contact.1211@gmail.com" className='custom-text custom-sub-text-hover'><span className='pointer'>Send an email</span><span className="font-lg custom-text pl-2 pointer"><FontAwesomeIcon icon={faLocationArrow} /></span></a></p>
                         </div>
                         <div className="col-6-xs">
                             <div className="row ml-1 gap-1">
