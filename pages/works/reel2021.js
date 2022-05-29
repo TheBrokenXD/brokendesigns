@@ -15,7 +15,7 @@ const reel2021 = () => {
                 <div className="card custom-variant-1-bg display-f justify-center">
                     <div className="mt-8 pb-2 vimeo-container">
                         <div className="vimeo-player">
-                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/661701340?h=66450442bc" width="1152" height="648" allowFullScreen></iframe>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/661701340?h=66450442bc" width="1152" height="648" frameBorder="0" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
