@@ -6,12 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lazyy": "sass  --no-source-map styles/index.scss:styles/index.css",
+    "watch:lazyy": "sass  --no-source-map styles/index.scss:styles/index.css --watch",
+    "purge:lazyy": "purgecss --css styles/index.css --content \"pages/**/*.js\" \"components/**/*.js\" --output styles/",
+    "build:lazyy": "npm run purge:lazyy && postcss styles/index.css -u autoprefixer cssnano -r --no-map"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@fullhuman/postcss-purgecss": "^4.1.3",
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.9",
+    "lottie-react": "^2.2.1",
     "next": "12.1.6",
+    "postcss-cli": "^9.1.0",
+    "purgecss": "^4.1.3",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "sass": "^1.52.1"
   },
   "devDependencies": {
     "eslint": "8.16.0",
