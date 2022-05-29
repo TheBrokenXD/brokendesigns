@@ -111,3 +111,18 @@
     box-sizing: border-box;
     z-index: -2;
 }
+
+form {
+    .input-t {
+        width: 250px;
+    }
+}
+
+// custom breakpoints
+
+@media (max-width: 1024px) {
+    .form-border-right {
+        border: none;
+        padding-right: 0;
+    }
+}

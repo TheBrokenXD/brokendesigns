@@ -58,19 +58,19 @@ const Contact = () => {
                 <div className="row justify-center align-i-center h-screen">
                     <div className="col-11-xs">
 
-                        <div className='card custom-card-bg-gradient justify-between br-md p-3'>
+                        <div className='card custom-card-bg-gradient justify-between br-md md-p-3 xs-p-2 md-mt-0 xs-mt-8'>
                             <div className="row">
 
-                                <div className="col-9-xl column justify-center form-border-right">
+                                <div className="col-9-xl col-12-xs column justify-center form-border-right">
                                     <form>
                                         <div className="row gap-1">
-                                            <div className="col-6-xs">
+                                            <div className="col-6-md col-12-xs">
                                                 <div className="column">
                                                     <label className='custom-sub-text fw-md' htmlFor="email">Email</label>
                                                     <input type="email" required className='mt-1 input-t custom-card-bg custom-sub-text shadow-base' placeholder='Enter your email' id='email' onChange={ (e) => { setDetails({ ...details, email: e.target.value }) } }/>
                                                 </div>
                                             </div>
-                                            <div className="col-6-xs">
+                                            <div className="col-6-md col-12-xs">
                                                 <div className="column">
                                                     <label className='custom-sub-text fw-md' htmlFor="subject">Subject</label>
                                                     <input type="text" required className='mt-1 input-t custom-card-bg custom-sub-text shadow-base' placeholder='Brief your subject' id='subject' onChange={ (e) => { setDetails({ ...details, subject: e.target.value }) } }/>
@@ -81,13 +81,15 @@ const Contact = () => {
                                             <label className='custom-sub-text fw-md'>Message</label>
                                             <input type="text" required className='mt-1 input-t custom-card-bg custom-sub-text shadow-base h-137-px' onChange={ (e) => { setDetails({ ...details, message: e.target.value }) } }/>
                                         </div>
-                                        <div className="display-f justify-between align-i-center mt-3">
-                                            <p className="font-lg custom-sub-text">I will reach out to you soon!</p>
-                                            <button className="custom-btn-rounded custom-text pl-6 pr-6 pt-2 pb-2" onClick={submitForm}>Send</button>
+                                        <div className="md-display-f xs-display-b justify-between align-i-center mt-3">
+                                            <p className="md-font-lg xs-font-md md-text-left xs-text-center custom-sub-text">I will reach out to you soon!</p>
+                                            <div className='md-display-b xs-display-f justify-center'>
+                                                <button className="custom-btn-rounded custom-text pl-6 pr-6 pt-2 pb-2 md-mt-0 xs-mt-2" onClick={submitForm}>Send</button>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
-                                <div className="col-3-xs column align-i-end justify-center display-f">
+                                <div className="col-3-xs column align-i-end justify-center xl-display-f xs-display-n">
                                     <p className='font-xl fw-bold custom-text'>Contact</p>
                                     <p className='custom-sub-text pt-2 display-f align-i-center'>See my works <Link href="/works"><button className='custom-btn-rounded ml-2 shadow-base custom-text'>Works</button></Link></p>
                                 </div>

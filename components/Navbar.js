@@ -44,9 +44,9 @@ const Navbar = () => {
                 
                 <div ref={lottieData} className="sidebar">
                     <ul>
-                        <li><Link href="/"><a className='font-xl custom-text unselectable'>Home</a></Link></li>
-                        <li><Link href="/works"><a className='font-xl custom-text unselectable'>Works</a></Link></li>
-                        <li><Link href="/contact"><a className='font-xl custom-text unselectable'>Contact</a></Link></li>
+                        <li><Link href="/"><a className='lg-font-xl xs-font-lg custom-text unselectable'>Home</a></Link></li>
+                        <li><Link href="/works"><a className='lg-font-xl xs-font-lg custom-text unselectable'>Works</a></Link></li>
+                        <li><Link href="/contact"><a className='lg-font-xl xs-font-lg custom-text unselectable'>Contact</a></Link></li>
                     </ul>
                 </div>
             </div>

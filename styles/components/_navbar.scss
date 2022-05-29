@@ -67,3 +67,42 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70%;
+        ul {
+            gap: $base-padding * 3;
+        }
+    }
+    .sidebar-toggled {
+        width: 70%;
+        ul {
+            gap: $base-padding * 3;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        .nav-content {
+            padding: 14px 32px;
+        }
+    }
+    .sidebar {
+        width: 100%;
+        ul {
+            padding-left: 0;
+            margin: auto;
+            gap: $base-padding * 2;
+        }
+    }
+    .sidebar-toggled {
+        width: 100%;
+        ul {
+            padding-left: 0;
+            margin: auto;
+            gap: $base-padding * 2;
+        }
+    }
+}

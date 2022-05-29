@@ -21,6 +21,13 @@ $grid-gaps: (
     z-index: -2;
 }
 
+@media (max-width: 768px) {
+    .container {
+      max-width: 98%;
+      padding: 0;
+    }
+}
+
 .row {
     display: flex;
     flex-flow: row wrap;

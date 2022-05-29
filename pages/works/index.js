@@ -8,7 +8,8 @@ import Web from '../../components/showcase/Web';
 
 const Works = () => {
     
-
+    const selectRef = useRef(null);
+    
     const motion = useRef(null);
     const graphic = useRef(null);
     const web = useRef(null);
@@ -31,6 +32,16 @@ const Works = () => {
         web.current.classList.remove('hidden');
     }
 
+    const selectChange = (e) => {
+        if(e.target.value === '1') {
+            filterMotion();
+        } else if(e.target.value === '2') {
+            filterGraphic();
+        } else if(e.target.value === '3') {
+            filterWeb();
+        }
+    }
+
     return (
         <>
             <Head>
@@ -42,11 +53,20 @@ const Works = () => {
 
                 <div className='container'>
 
-                    <div className='card black-bg custom-card-bg-gradient p-3 mt-8'>
-                        <div className="display-f">
+                    <div className='card black-bg custom-card-bg-gradient md-p-3 xs-p-1 mt-8'>
+                        <div className="md-display-f xs-display-n">
                             <p className='font-lg custom-text custom-misc-hover'><span className='pointer unselectable' onClick={filterMotion}>Motion design</span></p>
                             <p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable' onClick={filterGraphic}>Graphic design</span></p>
                             <p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable' onClick={filterWeb}>Web design</span></p>
+                        </div>
+                        <div className='md-display-n xs-display-f justify-center'>
+                            <form>
+                                <select ref={selectRef} required className="input-t custom-card-bg custom-sub-text shadow-base" id="category" onChange={selectChange}>
+                                    <option value="1">Motion design</option>
+                                    <option value="2">Graphic design</option>
+                                    <option value="3">Web design</option>
+                                </select>
+                            </form>
                         </div>
                     </div>
 
@@ -61,7 +81,7 @@ const Works = () => {
                     </div>
 
                     <div ref={web} className='web hidden'>
-                        <p className='custom-text font-xl fw-md mt-4'>Web Design</p>
+                        <p className='custom-text font-xl fw-md mt-4'>Web design</p>
                         <Web />
                     </div>
                     
