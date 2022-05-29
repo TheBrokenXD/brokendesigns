@@ -49,8 +49,6 @@ const Works = () => {
             </Head>
 
             <div>
-                <Navbar />
-
                 <div className='container'>
 
                     <div className='card black-bg custom-card-bg-gradient md-p-3 xs-p-1 mt-8'>

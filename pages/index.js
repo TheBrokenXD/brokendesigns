@@ -27,10 +27,11 @@ export default function Home() {
             <Head>
                 <title>Broken - Portfolio</title>
             </Head>
+
+            {/* don't remove this empty div */}
+            <div className='navbar-toggled navbar hidden'></div>
             
             <div>
-                <Navbar />
-
                 <div ref={titleRef} className='md-display-f xs-display-n justify-between mt-8'>
                     <p className='xl-font-xl-6 lg-font-xl-5 md-font-xl-4 custom-text font-f-code ls-0'>..</p>
                     <p className='xl-font-xl-6 lg-font-xl-5 md-font-xl-4 custom-text font-f-code ls-0'>BROKEN.</p>

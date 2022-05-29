@@ -53,8 +53,6 @@ const Contact = () => {
             </div>
 
             <div>
-                <Navbar />
-
                 <div className="row justify-center align-i-center h-screen">
                     <div className="col-11-xs">
 

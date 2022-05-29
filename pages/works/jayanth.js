@@ -10,8 +10,6 @@ const jayanth = () => {
             </Head>
 
             <div>
-                <Navbar />
-
                 <div className="card custom-variant-1-bg display-f justify-center">
                     <div className="mt-8 pb-2 vimeo-container">
                         <div className="vimeo-player">

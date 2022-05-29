@@ -1,10 +1,13 @@
 import {useRef, useState} from 'react';
 import Link from 'next/link';
 import Lottie from "lottie-react";
+import { Router, useRouter } from "next/router";
 // assets
 import Data from "../public/data.json";
 
 const Navbar = () => {
+
+    const router = useRouter()
 
     const lottieRef = useRef();
     const lottieData = useRef();
@@ -21,11 +24,11 @@ const Navbar = () => {
         }
     }
     
-    // const closeFunc = () => {
-    //     lottieData.current.className = "sidebar";
-    //     lottieRef.current.setDirection(-1);
-    //     lottieRef.current.play();
-    // }
+    const closeFunc = () => {
+        lottieData.current.className = "sidebar";
+        lottieRef.current.setDirection(-1);
+        lottieRef.current.play();
+    }
 
     return (
         <>
@@ -44,9 +47,9 @@ const Navbar = () => {
                 
                 <div ref={lottieData} className="sidebar">
                     <ul>
-                        <li><Link href="/"><a className='lg-font-xl xs-font-lg custom-text unselectable'>Home</a></Link></li>
-                        <li><Link href="/works"><a className='lg-font-xl xs-font-lg custom-text unselectable'>Works</a></Link></li>
-                        <li><Link href="/contact"><a className='lg-font-xl xs-font-lg custom-text unselectable'>Contact</a></Link></li>
+                        <li><Link href="/"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}>Home</a></Link></li>
+                        <li><Link href="/works"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}>Works</a></Link></li>
+                        <li><Link href="/contact"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}>Contact</a></Link></li>
                     </ul>
                 </div>
             </div>
