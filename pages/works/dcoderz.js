@@ -7,6 +7,18 @@ const dcoderz = () => {
         <>
             <Head>
                 <title>Broken - Team Dcoderz</title>
+                <meta name="description" content="Hey! I'm Broken. An enthusiastic self-taught motion, graphic, web designer." />
+                <link rel="canonical" href="https://brokendesigns.studio/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Broken - Team Dcoderz" />
+                <meta property="og:description" content="Hey! I'm Broken. An enthusiastic self-taught motion, graphic, web designer." />
+                <meta property="og:url" content="https://brokendesigns.studio/" />
+                <meta property="og:site_name" content="Broken" />
+                <meta name="twitter:title" content="Broken - Team Dcoderz" />
+                <meta name="twitter:description" content="Hey! I'm Broken. An enthusiastic self-taught motion, graphic, web designer." />
+                <meta name="twitter:url" content="https://brokendesigns.studio/" />
+                <meta name="twitter:site" content="@TheBroken_XD" />
+                <meta name="twitter:creator" content="@TheBroken_XD" />
             </Head>
 
             <div>
