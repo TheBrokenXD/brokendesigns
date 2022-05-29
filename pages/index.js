@@ -26,7 +26,7 @@ export default function Home() {
         <>
             <Head>
                 <title>Broken - Portfolio</title>
-                <meta name="description" content="Hey! I'm Broken. An enthusiastic self-taught motion, graphic, web designer." />
+                <meta name="description" content="Hey! I'm Broken. A passionate self-taught motion, graphic, web designer." />
                 <link rel="canonical" href="https://brokendesigns.studio/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Broken - Portfolio" />
