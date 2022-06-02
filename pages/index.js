@@ -3,8 +3,7 @@ import Link from 'next/link'
 import {useRef, useState, useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // components
-import Navbar from '../components/Navbar'
-import Works from '../components/Works'
+import Works from '../components/works'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
@@ -30,11 +29,11 @@ export default function Home() {
                 <link rel="canonical" href="https://brokendesigns.studio/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Broken - Portfolio" />
-                <meta property="og:description" content="Hey! I'm Broken. An enthusiastic self-taught motion, graphic, web designer." />
+                <meta property="og:description" content="Hey! I'm Broken. A passionate self-taught motion, graphic, web designer." />
                 <meta property="og:url" content="https://brokendesigns.studio/" />
                 <meta property="og:site_name" content="Broken" />
                 <meta name="twitter:title" content="Broken - Portfolio" />
-                <meta name="twitter:description" content="Hey! I'm Broken. An enthusiastic self-taught motion, graphic, web designer." />
+                <meta name="twitter:description" content="Hey! I'm Broken. A passionate self-taught motion, graphic, web designer." />
                 <meta name="twitter:url" content="https://brokendesigns.studio/" />
                 <meta name="twitter:site" content="@TheBroken_XD" />
                 <meta name="twitter:creator" content="@TheBroken_XD" />
@@ -76,9 +75,9 @@ export default function Home() {
                     </div>
                     <div className='card black-bg custom-card-bg-gradient p-3 mt-4 md-display-b xs-display-n'>
                         <div className="display-f lg-justify-start xs-justify-center">
-                            <Link href="/works"><p className='font-lg custom-text custom-misc-hover'><span className='pointer unselectable'>Motion design</span></p></Link>
-                            <Link href="/works"><p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable'>Graphic design</span></p></Link>
-                            <Link href="/works"><p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable'>Web design</span></p></Link>
+                            <Link href="/work"><p className='font-lg custom-text custom-misc-hover'><span className='pointer unselectable'>Motion design</span></p></Link>
+                            <Link href="/work"><p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable'>Graphic design</span></p></Link>
+                            <Link href="/work"><p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable'>Web design</span></p></Link>
                         </div>
                     </div>
 

@@ -46,15 +46,15 @@ const Contact = () => {
         <>
             <Head>
                 <title>Broken - Contact</title>
-                <meta name="description" content="Hey! I'm Broken. An enthusiastic self-taught motion, graphic, web designer." />
+                <meta name="description" content="Hey! I'm Broken. A passionate self-taught motion, graphic, web designer." />
                 <link rel="canonical" href="https://brokendesigns.studio/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Broken - Contact" />
-                <meta property="og:description" content="Hey! I'm Broken. An enthusiastic self-taught motion, graphic, web designer." />
+                <meta property="og:description" content="Hey! I'm Broken. A passionate self-taught motion, graphic, web designer." />
                 <meta property="og:url" content="https://brokendesigns.studio/" />
                 <meta property="og:site_name" content="Broken" />
                 <meta name="twitter:title" content="Broken - Contact" />
-                <meta name="twitter:description" content="Hey! I'm Broken. An enthusiastic self-taught motion, graphic, web designer." />
+                <meta name="twitter:description" content="Hey! I'm Broken. A passionate self-taught motion, graphic, web designer." />
                 <meta name="twitter:url" content="https://brokendesigns.studio/" />
                 <meta name="twitter:site" content="@TheBroken_XD" />
                 <meta name="twitter:creator" content="@TheBroken_XD" />
@@ -101,7 +101,7 @@ const Contact = () => {
                                 </div>
                                 <div className="col-3-xs column align-i-end justify-center xl-display-f xs-display-n">
                                     <p className='font-xl fw-bold custom-text'>Contact</p>
-                                    <p className='custom-sub-text pt-2 display-f align-i-center'>See my works <Link href="/works"><button className='custom-btn-rounded ml-2 shadow-base custom-text'>Works</button></Link></p>
+                                    <p className='custom-sub-text pt-2 display-f align-i-center'>See my work <Link href="/work"><button className='custom-btn-rounded ml-2 shadow-base custom-text'>Work</button></Link></p>
                                 </div>
 
                             </div>

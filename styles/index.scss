@@ -85,6 +85,11 @@
     }
 }
 
+.player-bg {
+    background: rgb(26,46,59);
+    background: linear-gradient(180deg, rgba(26,46,59,1) 0%, rgba(20,21,22,1) 100%);
+}
+
 .vimeo-container {
     width: 100%;
     max-width: 1152px;

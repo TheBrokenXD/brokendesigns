@@ -48,7 +48,7 @@ const Navbar = () => {
                 <div ref={lottieData} className="sidebar">
                     <ul>
                         <li><Link href="/"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}>Home</a></Link></li>
-                        <li><Link href="/works"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}>Works</a></Link></li>
+                        <li><Link href="/work"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}>Work</a></Link></li>
                         <li><Link href="/contact"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}>Contact</a></Link></li>
                     </ul>
                 </div>
