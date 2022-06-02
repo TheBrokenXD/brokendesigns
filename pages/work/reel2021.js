@@ -39,7 +39,7 @@ const reel2021 = () => {
                         </div>
                     </div>
                     <div className='mt-4'>
-                        <p className='custom-text font-lg'>I began working on this reel in late December. I didn't have much time to complete it since I was preoccupied with my studies. I just had a few days to get started, and I wanted to make a big impression right away at the beginning.</p>
+                        <p className='custom-text font-lg'>{`I began working on this reel in late December. I didn't have much time to complete it since I was preoccupied with my studies. I just had a few days to get started, and I wanted to make a big impression right away at the beginning.`}</p>
                         <img src="/reel/intro.gif" alt="intro" className='mt-4' />
                         <p className='custom-text font-lg fw-md mt-4'>Projects used:</p>
                         <p className='custom-text font-lg mt-2'>Some of the projects were left out since they are not portfolio-worthy.</p>

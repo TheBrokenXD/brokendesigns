@@ -40,7 +40,7 @@ const promo3d = () => {
                         </div>
                     </div>
                     <div className='mt-4'>
-                        <p className='custom-text font-lg'>I'd been bored for a long time and wanted to do more 3D exploration. Blender was lagging so badly on my PC that I had to resort to After Effects. I started it off by making my room in 3D.</p>
+                        <p className='custom-text font-lg'>{`I'd been bored for a long time and wanted to do more 3D exploration. Blender was lagging so badly on my PC that I had to resort to After Effects. I started it off by making my room in 3D.`}</p>
                         <div className="row gap-2 mt-2">
                             <div className="col-4-xl col-6-lg col-12-xs">
                                 <img src="/promo3d/room-3d.png" alt="cover" className="thumb-cover br-base" />
