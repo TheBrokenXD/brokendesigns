@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {useRef, useState, useEffect} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // components
-import Works from '../components/works'
+import Work from '../components/Work'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
@@ -81,7 +81,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <Works />
+                    <Work />
 
                     <div className="row mt-6 mb-2">
                         <div className="col-6-md col-12-xs">

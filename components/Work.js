@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Works = () => {
+const Work = () => {
     return (
         <>
             <div className="row gap-2 mt-4">
@@ -33,4 +33,4 @@ const Works = () => {
     );
 }
  
-export default Works;
+export default Work;
