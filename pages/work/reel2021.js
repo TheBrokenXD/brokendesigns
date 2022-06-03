@@ -29,7 +29,7 @@ const reel2021 = () => {
                     </div>
                 </div>
 
-                <div className='work-container pb-5'>
+                <div className='work-container pb-2'>
                     <div className="row mt-6">
                         <div className="col-6-xs">
                             <p className='font-lg fw-bold custom-text'>2021 Reel</p>

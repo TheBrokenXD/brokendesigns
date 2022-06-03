@@ -30,13 +30,35 @@ const dcoderz = () => {
                     </div>
                 </div>
 
-                <div className='work-container pb-5'>
+                <div className='work-container pb-2'>
                     <div className="row mt-6">
                         <div className="col-6-xs">
                             <p className='font-lg fw-bold custom-text'>Team Dcoderz</p>
                         </div>
                         <div className="col-6-xs">
                             <p className='custom-text'>A simple video profile for Dcoderz</p>
+                        </div>
+                    </div>
+                    <div className='mt-4'>
+                        <p className='custom-text font-lg'>{`When the admin of Team Dcoderz reached out to me, I had just installed saber plugin. Even though it's rather old, I decided to give it a go.`}</p>
+                        <img src="/dcoderz/saber.gif" alt="saber" className='mt-4 thumb-cover br-base'/>
+                        <p className='custom-text font-lg mt-4'>{`I had no idea what I was going to do next. So I looked for some inspiration. Here's what I found:`}</p>
+                        <div className='display-f justify-center mt-2'>
+                            <a href="https://www.behance.net/gallery/136534649/ESports-Intro-Collection" target="_blank" rel="noreferrer" className='custom-color'><button className='custom-btn-rounded custom-text pl-5 pr-5 pt-2 pb-2'>Click here</button></a>
+                        </div>
+                        <div className="row gap-2 mt-2">
+                            <div className="col-6-xl col-12-xs">
+                                <img src="/dcoderz/watermark.png" alt="cover" className="thumb-cover br-base" />
+                            </div>
+                            <div className="col-6-xl col-12-xs">
+                                <img src="/dcoderz/overlay.png" alt="cover" className="thumb-cover br-base" />
+                            </div>
+                            <div className='col-6-xl col-12-xs'>
+                                <img src="/dcoderz/bglogo.png" alt="cover" className='thumb-cover br-base' />
+                            </div>
+                            <div className='col-6-xl col-12-xs'>
+                                <img src="/dcoderz/final.png" alt="cover" className='thumb-cover br-base' />
+                            </div>
                         </div>
                     </div>
                 </div>
