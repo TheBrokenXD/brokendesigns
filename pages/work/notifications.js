@@ -1,6 +1,5 @@
 import Head from 'next/head'
-// components
-import Navbar from '../../components/Navbar';
+import Image from 'next/image'
 
 const notifications = () => {
     return (
@@ -51,10 +50,10 @@ const notifications = () => {
                         </div>
                         <div className="row gap-2 mt-2">
                             <div className="col-6-xl col-12-xs">
-                                <img src="/notifications/1.png" alt="notifications" className='thumb-cover br-base' />
+                                <Image src="https://drive.google.com/uc?id=1RFVVwp_258XbOLhUjZNmG8cJT5lfoE6V" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                             <div className="col-6-xl col-12-xs">
-                                <img src="/notifications/2.png" alt="notifications" className='thumb-cover br-base' />
+                                <Image src="https://drive.google.com/uc?id=1mnoD8rjTvp0gB3P_T9zoWBXETPOvC80p" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                         </div>
                     </div>

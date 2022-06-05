@@ -1,6 +1,5 @@
 import Head from 'next/head'
-// components
-import Navbar from '../../components/Navbar';
+import Image from 'next/image';
 
 const valentine = () => {
     return (
@@ -36,7 +35,21 @@ const valentine = () => {
                             <p className='font-lg fw-bold custom-text'>Valentine</p>
                         </div>
                         <div className="col-6-xs">
-                            <p className='custom-text'>A thing that I made for Valentines day.</p>
+                            <p className='custom-text'>{`Something that I made for Valentine's Day.`}</p>
+                        </div>
+                    </div>
+                    <div className='mt-4'>
+                        <p className='custom-text font-lg'>{`I wanted to make something special for Valentine's Day. This year, I was completely consumed by my studies, and I had a math exam on February 14th.`}</p>
+                        <p className='custom-text font-lg mt-2'>Breakdown:</p>
+                        <div className="row gap-2 mt-4">
+                            {/* <div className="col-6-lg col-12-md">
+                                <Image src="https://drive.google.com/uc?id=19WOqTWsVdAgPHXoL4AAks0n60rNU8oVy" width={1920} height={1080} />
+                                <p className="custom-text">vfdsgrs.</p>
+                            </div>
+                            <div className="col-6-lg col-12-md">
+                                <Image src="https://drive.google.com/uc?id=1VKsSAdLk75mkIlRMKb4onVwv4cWtAz-d" width={1920} height={1080} />
+                                <p className="custom-text">A what</p>
+                            </div> */}
                         </div>
                     </div>
                 </div>

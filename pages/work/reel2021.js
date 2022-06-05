@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link';
+import Image from 'next/image';
 
 const reel2021 = () => {
     return (
@@ -40,43 +41,45 @@ const reel2021 = () => {
                     </div>
                     <div className='mt-4'>
                         <p className='custom-text font-lg'>{`I began working on this reel in late December. I didn't have much time to complete it since I was preoccupied with my studies. I just had a few days to get started, and I wanted to make a big impression right away at the beginning.`}</p>
-                        <img src="/reel/intro.gif" alt="intro" className='mt-4' />
+                        <div className='mt-4'>
+                            <Image src="https://drive.google.com/uc?id=1jCWfbrp8yV709hm4mxQnOmztTTP1oZLO" width={1920} height={1080} className="thumb-cover br-base" />
+                        </div>
                         <p className='custom-text font-lg fw-md mt-4'>Projects used:</p>
                         <p className='custom-text font-lg mt-2'>Some of the projects were left out since they are not portfolio-worthy.</p>
                     </div>
                     <div className="row gap-2 mt-2">
                         <div className="col-4-xl col-6-lg col-12-xs">
-                            <Link href="/work/promo3d"><img src="/index-thumbnail/3d-promo.png" alt="cover" className="thumb-cover br-base" /></Link>
+                            <Link href="/work/promo3d"><Image src="https://drive.google.com/uc?id=1Pij2izB9NsQGfm7H4ZjAaqVSSD97bVsP" width={1080} height={1080} className="thumb-cover br-base" /></Link>
                             <p className='custom-text font-lg fw-md pt-1'><Link href="/work/promo3d"><span className='pointer custom-misc-hover'>3d Promo</span></Link></p>
                             <p className="custom-sub-text ls-0">A 3d Promo created within After effects.</p>
                         </div>
                         <div className="col-4-xl col-6-lg col-12-xs">
-                            <Link href="/work/dcoderz"><img src="/index-thumbnail/dcoderz.png" alt="cover" className="thumb-cover br-base" /></Link>
+                            <Link href="/work/dcoderz"><Image src="https://drive.google.com/uc?id=1rP1mnfRvKgBMS2XP6jdUm4COpKKIumSH" width={1080} height={1080} className="thumb-cover br-base" /></Link>
                             <p className='custom-text font-lg fw-md pt-1'><Link href="/work/dcoderz"><span className='pointer custom-misc-hover'>Team Dcoderz</span></Link></p>
                             <p className="custom-sub-text ls-0">Video profile for Team Dcoderz</p>
                         </div>
                         <div className="col-4-xl col-6-lg col-12-xs">
-                            <Link href="/work/notifications"><img src="/index-thumbnail/noti.png" alt="cover" className="thumb-cover br-base" /></Link>
+                            <Link href="/work/notifications"><Image src="https://drive.google.com/uc?id=10HMGoQij7C1MlnH62irO3qmC_y0QFld1" width={1080} height={1080} className="thumb-cover br-base" /></Link>
                             <p className='custom-text font-lg fw-md pt-1'><Link href="/work/notifications"><span className='pointer custom-misc-hover'>Notifications</span></Link></p>
                             <p className="custom-sub-text ls-0">Turn on your notifications!!</p>
                         </div>
                         <div className="col-4-xl col-6-lg col-12-xs">
-                            <Link href="/work/fabiconv2"><img src="/index-thumbnail/fabicon-v2.png" alt="cover" className="thumb-cover br-base" /></Link>
+                            <Link href="/work/notifications"><Image src="https://drive.google.com/uc?id=10Ar-LvSetRc5-OxSrU07lrauuWE3-zNF" width={1080} height={1080} className="thumb-cover br-base" /></Link>
                             <p className='custom-text font-lg fw-md pt-1'><Link href="/work/fabiconv2"><span className='pointer custom-misc-hover'>Fabicon V2</span></Link></p>
                             <p className="custom-sub-text ls-0">My second entry for Fabicon contest.</p>
                         </div>
                         <div className="col-4-xl col-6-lg col-12-xs">
-                            <Link href="/work/fabiconv1"><img src="/index-thumbnail/fabicon-v1.png" alt="cover" className="thumb-cover br-base" /></Link>
+                            <Link href="/work/notifications"><Image src="https://drive.google.com/uc?id=1cJxcDCd-8iAvt4Jok2Cnk90_8vf6o0in" width={1080} height={1080} className="thumb-cover br-base" /></Link>
                             <p className='custom-text font-lg fw-md pt-1'><Link href="/work/fabiconv1"><span className='pointer custom-misc-hover'>Fabicon V1</span></Link></p>
                             <p className="custom-sub-text ls-0">My first entry for Fabicon contest.</p>
                         </div>
                         <div className="col-4-xl col-6-lg col-12-xs">
-                            <Link href="/work/vincenzo"><img src="/index-thumbnail/vincenzo.png" alt="cover" className="thumb-cover br-base" /></Link>
+                            <Link href="/work/notifications"><Image src="https://drive.google.com/uc?id=1VwOFTq0FB7pd_iOchbe8b7XZ0wE2g9ne" width={1080} height={1080} className="thumb-cover br-base" /></Link>
                             <p className='custom-text font-lg fw-md pt-1'><Link href="/work/vincenzo"><span className='pointer custom-misc-hover'>Vincenzo</span></Link></p>
                             <p className="custom-sub-text ls-0">A stream package for Vincenzo.</p>
                         </div>
                         <div className="col-4-xl col-6-lg col-12-xs">
-                            <Link href="/work/jayanth"><img src="/index-thumbnail/jayanth.png" alt="cover" className="thumb-cover br-base" /></Link>
+                            <Link href="/work/notifications"><Image src="https://drive.google.com/uc?id=14E1x_j13qLm8P0jdEgdc82jFWTHGB3-h" width={1080} height={1080} className="thumb-cover br-base" /></Link>
                             <p className='custom-text font-lg fw-md pt-1'><Link href="/work/jayanth"><span className='pointer custom-misc-hover'>Jayanth</span></Link></p>
                             <p className="custom-sub-text ls-0">Promo for client Jayanth.</p>
                         </div>

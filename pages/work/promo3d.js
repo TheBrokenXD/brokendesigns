@@ -1,6 +1,5 @@
 import Head from 'next/head'
-// components
-import Navbar from '../../components/Navbar';
+import Image from 'next/image'
 
 const promo3d = () => {
     return (
@@ -43,13 +42,13 @@ const promo3d = () => {
                         <p className='custom-text font-lg'>{`I'd been bored for a long time and wanted to do more 3D exploration. Blender was lagging so badly on my PC that I had to resort to After Effects. I started it off by making my room in 3D.`}</p>
                         <div className="row gap-2 mt-2">
                             <div className="col-4-xl col-6-lg col-12-xs">
-                                <img src="/promo3d/room-3d.png" alt="cover" className="thumb-cover br-base" />
+                                <Image src="https://drive.google.com/uc?id=1Pdg6A2V_rE1cFdzwUGec9Moo_UiQoyAq" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                             <div className="col-4-xl col-6-lg col-12-xs">
-                                <img src="/promo3d/room-upleft.png" alt="cover" className="thumb-cover br-base" />
+                                <Image src="https://drive.google.com/uc?id=1VFb_oSEdptI3vyisrV5BYgY9wTnpB0Dw" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                             <div className="col-4-xl col-6-lg col-12-xs">
-                                <img src="/promo3d/room-upright.png" alt="cover" className="thumb-cover br-base" />
+                                <Image src="https://drive.google.com/uc?id=1R4i0E17pUtRWLIBlMBW0nTiKUkPJovUX" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                         </div>
                         <p className='custom-text font-lg mt-2'>It took me so long to get the hang of it. I used match-cut for the transitions as I was clumsy. I took inspiration from these:</p>
@@ -59,22 +58,22 @@ const promo3d = () => {
                         </div>
                         <div className="row gap-2 mt-2">
                             <div className="col-6-xl col-12-xs">
-                                <img src="/promo3d/match-cut.gif" alt="cover" className="thumb-cover br-base" />
+                                <Image src="https://drive.google.com/uc?id=1KgfpNTgDDYuN5l2sWI6CXuPFeLK5sRli" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                             <div className="col-6-xl col-12-xs">
-                                <img src="/promo3d/match-cut-2.gif" alt="cover" className="thumb-cover br-base" />
+                                <Image src="https://drive.google.com/uc?id=1qyvK9o59tK11BkbcZvvE2D9b0ZtmdlOu" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                             <div className='col-12-xs'>
-                                <img src="/promo3d/ui.gif" alt="cover" className='thumb-cover br-base' />
+                                <Image src="https://drive.google.com/uc?id=110wzGqwqECJCvHjxfadqrpMkwTh_FxlE" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                         </div>
                         <p className='font-lg custom-text mt-2'>After I finished them, I felt a lack of imagination. I had lost motivation after working on this for three months and was going to abandon the project. However, several people advised me not to scrape it and to take a break instead. I took a break and after that I made a phone model.</p>
                         <div className="row gap-2 mt-2">
                             <div className="col-6-xl col-12-xs">
-                                <img src="/promo3d/phone.gif" alt="phone" className='thumb-cover br-base' />
+                                <Image src="https://drive.google.com/uc?id=1DzZNWGqoTpb32DSKRZqF6RCmbYI2Zhp8" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                             <div className="col-6-xl col-12-xs">
-                                <img src="/promo3d/phone-end.gif" alt="phone" className='thumb-cover br-base' />
+                                <Image src="https://drive.google.com/uc?id=13Rn6-FqRnNz_co3kS6TEThIYojF6Wdaw" width={1920} height={1080} className="thumb-cover br-base" />
                             </div>
                         </div>
                         <p className='custom-text font-lg mt-2'>This piece was a lot of fun to work on and quite satisfying.</p>
