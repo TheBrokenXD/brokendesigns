@@ -41,7 +41,7 @@ const dcoderz = () => {
                     <div className='mt-4'>
                         <p className='custom-text font-lg'>{`When the admin of Team Dcoderz reached out to me, I had just installed saber plugin. Even though it's rather old, I decided to give it a go.`}</p>
                         <div className='mt-4'>
-                            <Image src="https://drive.google.com/uc?id=1h257S_JZaIxWGu-gtzCd-1Whcl-55Ya8" width={1920} height={1080} className="thumb-cover br-base" />
+                            <video src="/img/dcoderz/saber.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
                         </div>
                         <p className='custom-text font-lg mt-4'>{`I had no idea what I was going to do next. So I looked for some inspiration. Here's what I found:`}</p>
                         <div className='display-f justify-center mt-2'>
@@ -49,16 +49,16 @@ const dcoderz = () => {
                         </div>
                         <div className="row gap-2 mt-2">
                             <div className="col-6-xl col-12-xs">
-                                <Image src="https://drive.google.com/uc?id=1NMyJarSvt0jufPsMoFxrogK-Lkp4kgTe" width={1920} height={1080} className="thumb-cover br-base" />
+                                <Image src="/img/dcoderz/overlay.png" width={1920} height={1080} className="thumb-cover br-base" alt='overlay' />
                             </div>
                             <div className="col-6-xl col-12-xs">
-                                <Image src="https://drive.google.com/uc?id=1kcrCsOMArYmz87th2_ruSYgKg8MdXpSq" width={1920} height={1080} className="thumb-cover br-base" />
+                                <Image src="/img/dcoderz/watermark.png" width={1920} height={1080} className="thumb-cover br-base" alt='watermark' />
                             </div>
                             <div className='col-6-xl col-12-xs'>
-                                <Image src="https://drive.google.com/uc?id=1aB_IqgjXcqymhG3CpbIGba3MGK59xIYO" width={1920} height={1080} className="thumb-cover br-base" />
+                                <Image src="/img/dcoderz/bg-logo.png" width={1920} height={1080} className="thumb-cover br-base" alt='logo' />
                             </div>
                             <div className='col-6-xl col-12-xs'>
-                                <Image src="https://drive.google.com/uc?id=1Qgu5phAplqEVJEBCk2FnI_uPT3dqBXEF" width={1920} height={1080} className="thumb-cover br-base" />
+                                <Image src="/img/dcoderz/final.png" width={1920} height={1080} className="thumb-cover br-base" alt='final' />
                             </div>
                         </div>
                     </div>

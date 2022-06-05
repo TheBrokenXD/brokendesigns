@@ -41,15 +41,31 @@ const valentine = () => {
                     <div className='mt-4'>
                         <p className='custom-text font-lg'>{`I wanted to make something special for Valentine's Day. This year, I was completely consumed by my studies, and I had a math exam on February 14th.`}</p>
                         <p className='custom-text font-lg mt-2'>Breakdown:</p>
-                        <div className="row gap-2 mt-4">
-                            {/* <div className="col-6-lg col-12-md">
-                                <Image src="https://drive.google.com/uc?id=19WOqTWsVdAgPHXoL4AAks0n60rNU8oVy" width={1920} height={1080} />
-                                <p className="custom-text">vfdsgrs.</p>
+                        <div className="row gap-2 mt-2">
+                            <div className="col-6-lg col-12-md">
+                                <Image src="/img/valentine/comp-one.png" width={1920} height={1080} className="thumb-cover br-base" alt='one' />
+                                <p className="custom-text fw-md">Create a composition with a resolution of 6000x1080.</p>
                             </div>
                             <div className="col-6-lg col-12-md">
-                                <Image src="https://drive.google.com/uc?id=1VKsSAdLk75mkIlRMKb4onVwv4cWtAz-d" width={1920} height={1080} />
-                                <p className="custom-text">A what</p>
-                            </div> */}
+                                <Image src="/img/valentine/comp-one-pic.png" width={1920} height={1080} className="thumb-cover br-base" alt='two' />
+                                <p className="custom-text fw-md">Using the shape tool, create a series of random rectangles.</p>
+                            </div>
+                            <div className="col-6-lg col-12-md">
+                                <Image src="/img/valentine/comp-two.png" width={1920} height={1080} className="thumb-cover br-base" alt='three' />
+                                <p className="custom-text fw-md">Create another composition with a resolution of 1080x6000 and import the previous comp.</p>
+                            </div>
+                            <div className="col-6-lg col-12-md">
+                                <Image src="/img/valentine/comp-two-pic.png" width={1920} height={1080} className="thumb-cover br-base" alt='four' />
+                                <p className="custom-text fw-md">Duplicate it multiple times and add fill effect. I recommend using four colors. Scale it, rotate it, make it look random.</p>
+                            </div>
+                            <div className="col-6-lg col-12-md">
+                                <Image src="/img/valentine/effects.png" width={1920} height={1080} className="thumb-cover br-base" alt='five' />
+                                <p className="custom-text fw-md">Create a 1080x1080 comp and import the previous comp. Add motion tile and CC cylinder effect to make it look like a 3D tunnel.</p>
+                            </div>
+                            <div className="col-6-lg col-12-md">
+                                <Image src="/img/valentine/final.png" width={1920} height={1080} className="thumb-cover br-base" alt='six' />
+                                <p className="custom-text fw-md">{`Here's an example`}.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

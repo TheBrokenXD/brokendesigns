@@ -50,10 +50,10 @@ const notifications = () => {
                         </div>
                         <div className="row gap-2 mt-2">
                             <div className="col-6-xl col-12-xs">
-                                <Image src="https://drive.google.com/uc?id=1RFVVwp_258XbOLhUjZNmG8cJT5lfoE6V" width={1920} height={1080} className="thumb-cover br-base" />
+                                <Image src="/img/notifications/eyes.jpg" width={1920} height={1080} className="thumb-cover br-base" alt='one' />
                             </div>
                             <div className="col-6-xl col-12-xs">
-                                <Image src="https://drive.google.com/uc?id=1mnoD8rjTvp0gB3P_T9zoWBXETPOvC80p" width={1920} height={1080} className="thumb-cover br-base" />
+                                <Image src="/img/notifications/turn-on.jpg" width={1920} height={1080} className="thumb-cover br-base" alt='two' />
                             </div>
                         </div>
                     </div>
