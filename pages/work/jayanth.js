@@ -1,6 +1,5 @@
 import Head from 'next/head'
-// components
-import Navbar from '../../components/Navbar';
+import Image from 'next/image'
 
 const jayanth = () => {
     return (
@@ -30,13 +29,32 @@ const jayanth = () => {
                     </div>
                 </div>
 
-                <div className='work-container pb-5'>
+                <div className='work-container pb-4'>
                     <div className="row mt-6">
                         <div className="col-6-xs">
                             <p className='font-lg fw-bold custom-text'>Jayanth Kageri</p>
                         </div>
                         <div className="col-6-xs">
                             <p className='custom-text'>A promo for a client.</p>
+                        </div>
+                    </div>
+                    <div className='mt-4'>
+                        <p className='custom-text font-lg'>He wanted a straightforward advertisement that would convey both his brand and his coding abilities. He granted me complete creative freedom over the design, soundtrack, and animation.</p>
+                        <p className='custom-text font-lg mt-4'>Design Approach:</p>
+                        <p className='custom-text font-lg mt-2'>Throughout the animation, I aimed to give it a design that was intricate and edgy.</p>
+                        <div className="row gap-2 mt-2">
+                            <div className="col-6-xl col-12-xs">
+                                <video src="/img/jayanth/complex.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
+                            </div>
+                            <div className="col-6-xl col-12-xs">
+                                <Image src="/img/jayanth/tag.png" width={1920} height={1080} className="thumb-cover br-base" alt='branding' />
+                            </div>
+                            <div className="col-6-xl col-12-xs">
+                                <video src="/img/jayanth/grid.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
+                            </div>
+                            <div className="col-6-xl col-12-xs">
+                                <video src="/img/jayanth/decoding.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
+                            </div>
                         </div>
                     </div>
                 </div>

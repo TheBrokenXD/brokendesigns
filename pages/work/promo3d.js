@@ -29,7 +29,7 @@ const promo3d = () => {
                     </div>
                 </div>
 
-                <div className='work-container pb-2'>
+                <div className='work-container pb-4'>
                     <div className="row mt-6">
                         <div className="col-6-xs">
                             <p className='font-lg fw-bold custom-text'>Broken - Promo</p>

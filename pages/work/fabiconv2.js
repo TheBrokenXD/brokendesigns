@@ -1,6 +1,5 @@
 import Head from 'next/head'
-// components
-import Navbar from '../../components/Navbar';
+import Image from 'next/image'
 
 const fabiconv2 = () => {
     return (
@@ -30,13 +29,31 @@ const fabiconv2 = () => {
                     </div>
                 </div>
 
-                <div className='work-container pb-5'>
+                <div className='work-container pb-4'>
                     <div className="row mt-6">
                         <div className="col-6-xs">
                             <p className='font-lg fw-bold custom-text'>Fabicon V2</p>
                         </div>
                         <div className="col-6-xs">
                             <p className='custom-text'>My second entry for Fabicon.</p>
+                        </div>
+                    </div>
+                    <div className='mt-4'>
+                        <p className='custom-text font-lg'>My first Fabicon submission left me unsatisfied. So I decided to create a second submission. This time, I decided to attempt 3D for the first time. I utilized the cinema 4d renderer that comes with after effects.</p>
+                        <p className='custom-text font-lg mt-2'>These were my inspirations:</p>
+                        <div className="display-f justify-around mt-2">
+                            <button className='custom-btn-rounded custom-text pl-5 pr-5 pt-2 pb-2'><a href="https://youtu.be/BOvssxmdfzQ" target="_blank" rel="noreferrer" className='custom-color'><span className='custom-text'>Click here</span></a></button>
+                            <button className='custom-btn-rounded custom-text pl-5 pr-5 pt-2 pb-2'><a href="https://youtu.be/JkdraGCJpb4" target="_blank" rel="noreferrer" className='custom-color'><span className='custom-text'>Click here</span></a></button>
+                        </div>
+                        <video src="/img/fabiconv2/opening.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base mt-4"></video>
+                        <p className='custom-text font-lg mt-2'>{`This was one of my very first designs. I just wanted it to look good. I didn't think about the smoothness. That was a major oversight on my part, and the sequences were out of rhythm.`}</p>
+                        <div className="row gap-2 mt-2">
+                            <div className="col-6-xs">
+                                <Image src="/img/fabiconv2/cam-right.png" width={1920} height={1080} className="thumb-cover br-base" alt='camera-right' />
+                            </div>
+                            <div className="col-6-xs">
+                                <Image src="/img/fabiconv2/cam-left.png" width={1920} height={1080} className="thumb-cover br-base" alt='camera-left' />
+                            </div>
                         </div>
                     </div>
                 </div>

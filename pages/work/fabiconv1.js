@@ -1,6 +1,5 @@
 import Head from 'next/head'
-// components
-import Navbar from '../../components/Navbar';
+import Image from 'next/image'
 
 const fabiconv1 = () => {
     return (
@@ -30,7 +29,7 @@ const fabiconv1 = () => {
                     </div>
                 </div>
 
-                <div className='work-container pb-5'>
+                <div className='work-container pb-4'>
                     <div className="row mt-6">
                         <div className="col-6-xs">
                             <p className='font-lg fw-bold custom-text'>Fabicon V1</p>
@@ -38,6 +37,21 @@ const fabiconv1 = () => {
                         <div className="col-6-xs">
                             <p className='custom-text'>My first entry for Fabicon.</p>
                         </div>
+                    </div>
+                    <div className='mt-4'>
+                        <p className='custom-text font-lg'>This is my very first project. This one took me a long time to complete, despite my excitement about making it. I thought low fps would be a good fit for this project.</p>
+                        <div className='mt-4'>
+                            <Image src="/img/fabiconv1/cover.png" width={1920} height={1080} className="thumb-cover br-base mt-2" alt='cover' />
+                        </div>
+                        <div className="row gap-2 mt-2">
+                            <div className="col-6-xs">
+                                <video src="/img/fabiconv1/ball-one.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base mt-2"></video>
+                            </div>
+                            <div className="col-6-xs">
+                                <video src="/img/fabiconv1/ball-two.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base mt-2"></video>
+                            </div>
+                        </div>
+                        <video src="/img/fabiconv1/terminal.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base mt-2"></video>
                     </div>
                 </div>
             </div>

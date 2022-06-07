@@ -30,7 +30,7 @@ const soon = () => {
                     </div>
                 </div>
 
-                <div className='work-container pb-5'>
+                <div className='work-container pb-4'>
                     <div className="row mt-6">
                         <div className="col-6-xs">
                             <p className='font-lg fw-bold custom-text'>Soon</p>
@@ -38,6 +38,21 @@ const soon = () => {
                         <div className="col-6-xs">
                             <p className='custom-text'>{`I really don't know why I made this.`}</p>
                         </div>
+                    </div>
+                    <div className='mt-4'>
+                        <p className='custom-text font-lg'>Breakdown:</p>
+                        <div className="row gap-2 mt-2">
+                            <div className="col-6-xl col-12-xs">
+                                <video src="/img/soon/wireframe.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
+                                <p className='custom-sub-text fw-md'>wireframe</p>
+                            </div>
+                            <div className="col-6-xl col-12-xs">
+                                <video src="/img/soon/intro.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
+                                <p className='custom-sub-text fw-md'>standard</p>
+                            </div>
+                        </div>
+                        <video src="/img/soon/loop.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base mt-2"></video>
+                        <video src="/img/soon/gradient.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base mt-2"></video>
                     </div>
                 </div>
             </div>

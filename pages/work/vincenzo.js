@@ -1,6 +1,5 @@
 import Head from 'next/head'
-// components
-import Navbar from '../../components/Navbar';
+import Image from 'next/image'
 
 const vincenzo = () => {
     return (
@@ -30,13 +29,36 @@ const vincenzo = () => {
                     </div>
                 </div>
 
-                <div className='work-container pb-5'>
+                <div className='work-container pb-4'>
                     <div className="row mt-6">
                         <div className="col-6-xs">
                             <p className='font-lg fw-bold custom-text'>Vincezo Stream Package</p>
                         </div>
                         <div className="col-6-xs">
                             <p className='custom-text'>A fan made stream package for Vincenzo.</p>
+                        </div>
+                    </div>
+                    <div className='mt-4'>
+                        <p className='custom-text font-lg'>I, personally, am a big fan of Vincenzo and his gameplay. I used to watch his streams on Youtube, but when he switched over to Twitch, he didn't use any stream assets.</p>
+                        <p className='custom-text font-lg mt-2'>Vincenzo:</p>
+                        <div className="display-f justify-center mt-2">
+                            <button className='custom-btn-rounded custom-text pl-5 pr-5 pt-2 pb-2'><a href="https://www.youtube.com/c/Vincenzo74/" target="_blank" rel="noreferrer" className='custom-color'><span className='custom-text'>Click here</span></a></button>
+                        </div>
+                        <p className='custom-text font-lg mt-4'>The idea was to use the colors red and black as a representation of his brand.</p>
+                        <div className='mt-4'>
+                            <Image src="/img/vincenzo/branding.png" width={1920} height={1080} className="thumb-cover br-base" alt='branding' />
+                        </div>
+                        <div className="row gap-2 mt-2">
+                            <div className="col-6-xl col-12-xs">
+                                <video src="/img/vincenzo/text-animation.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
+                            </div>
+                            <div className="col-6-xl col-12-xs">
+                                <video src="/img/vincenzo/break.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
+                            </div>
+                        </div>
+                        <p className='custom-text font-lg mt-2'>Watch the full version here:</p>
+                        <div className="display-f justify-center mt-2">
+                            <button className='custom-btn-rounded custom-text pl-5 pr-5 pt-2 pb-2'><a href="https://youtu.be/LaqfrhkjPP0" target="_blank" rel="noreferrer" className='custom-color'><span className='custom-text'>Click here</span></a></button>
                         </div>
                     </div>
                 </div>

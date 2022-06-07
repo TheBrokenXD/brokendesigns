@@ -8,7 +8,7 @@ import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
 
-    const titleRef = useRef();
+    const titleRef = useRef(null);
     const [offset, setOffset] = useState(0);
 
     useEffect(() => {

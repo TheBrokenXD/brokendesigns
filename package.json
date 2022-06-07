@@ -26,6 +26,7 @@
     "purgecss": "^4.1.3",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-webcam": "^7.0.1",
     "sass": "^1.52.1"
   },
   "devDependencies": {
