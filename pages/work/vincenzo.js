@@ -39,7 +39,7 @@ const vincenzo = () => {
                         </div>
                     </div>
                     <div className='mt-4'>
-                        <p className='custom-text font-lg'>I, personally, am a big fan of Vincenzo and his gameplay. I used to watch his streams on Youtube, but when he switched over to Twitch, he didn't use any stream assets.</p>
+                        <p className='custom-text font-lg'>{`I, personally, am a big fan of Vincenzo and his gameplay. I used to watch his streams on Youtube, but when he switched over to Twitch, he didn't use any stream assets.`}</p>
                         <p className='custom-text font-lg mt-2'>Vincenzo:</p>
                         <div className="display-f justify-center mt-2">
                             <button className='custom-btn-rounded custom-text pl-5 pr-5 pt-2 pb-2'><a href="https://www.youtube.com/c/Vincenzo74/" target="_blank" rel="noreferrer" className='custom-color'><span className='custom-text'>Click here</span></a></button>
