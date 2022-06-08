@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import {useRef, useState, useEffect} from 'react'
 
-const broken = () => {
+const Broken = () => {
 
     const titleRef = useRef(null);
     const [offset, setOffset] = useState(0);
@@ -55,4 +55,4 @@ const broken = () => {
     );
 }
  
-export default broken;
+export default Broken;
