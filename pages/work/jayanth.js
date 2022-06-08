@@ -47,7 +47,7 @@ const jayanth = () => {
                                 <video src="/img/jayanth/complex.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
                             </div>
                             <div className="col-6-xl col-12-xs">
-                                <Image src="/img/jayanth/tag.png" width={1920} height={1080} className="thumb-cover br-base" alt='branding' />
+                                <Image src="/img/jayanth/tag.png" width={1920} height={1080} className="thumb-cover br-base" alt='tag' />
                             </div>
                             <div className="col-6-xl col-12-xs">
                                 <video src="/img/jayanth/grid.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base"></video>
