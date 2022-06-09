@@ -44,10 +44,10 @@ const fabiconv1 = () => {
                             <Image src="/img/fabiconv1/cover.png" width={1920} height={1080} className="thumb-cover br-base mt-2" alt='cover' />
                         </div>
                         <div className="row gap-2 mt-2">
-                            <div className="col-6-xs">
+                            <div className="col-6-lg col-12-xs">
                                 <video src="/img/fabiconv1/ball-one.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base mt-2"></video>
                             </div>
-                            <div className="col-6-xs">
+                            <div className="col-6-lg col-12-xs">
                                 <video src="/img/fabiconv1/ball-two.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base mt-2"></video>
                             </div>
                         </div>

@@ -20,8 +20,20 @@ const noah = () => {
                 <meta name="twitter:creator" content="@TheBroken_XD" />
             </Head>
 
-            <div className='mt-6'>
-                
+            <div className='work-container'>
+                <p className='custom-text font-xl-4 font-f-code ls-0 mt-8'>NOAH</p>
+                <p className='custom-text font-lg'>Personal Identity for myself.</p>
+                <div className="row gap-2 mt-2">
+                    <div className="col-4-xl col-6-lg col-12-xs">
+                        <Image src="/img/noah/without-noise.jpg" width={1080} height={1080} className="thumb-cover br-base" alt='without-noise' />
+                    </div>
+                    <div className="col-4-xl col-6-lg col-12-xs">
+                        <Image src="/img/noah/banner.jpg" width={1080} height={1080} className="thumb-cover br-base" alt='banner' />
+                    </div>
+                    <div className="col-4-xl col-6-lg col-12-xs">
+                        <Image src="/img/noah/with-noise.jpg" width={1080} height={1080} className="thumb-cover br-base" alt='with-noise' />
+                    </div>
+                </div>
             </div>
         </>
     );

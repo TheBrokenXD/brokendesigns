@@ -48,10 +48,10 @@ const fabiconv2 = () => {
                         <video src="/img/fabiconv2/opening.mp4" width="100%" preload muted="true" autoPlay loop className="thumb-cover br-base mt-4"></video>
                         <p className='custom-text font-lg mt-2'>{`This was one of my very first designs. I just wanted it to look good. I didn't think about the smoothness. That was a major oversight on my part, and the sequences were out of rhythm.`}</p>
                         <div className="row gap-2 mt-2">
-                            <div className="col-6-xs">
+                            <div className="col-6-lg col-12-xs">
                                 <Image src="/img/fabiconv2/cam-right.png" width={1920} height={1080} className="thumb-cover br-base" alt='camera-right' />
                             </div>
-                            <div className="col-6-xs">
+                            <div className="col-6-lg col-12-xs">
                                 <Image src="/img/fabiconv2/cam-left.png" width={1920} height={1080} className="thumb-cover br-base" alt='camera-left' />
                             </div>
                         </div>
