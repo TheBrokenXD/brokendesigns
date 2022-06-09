@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // components
 import Work from '../components/Work'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+// animations
+import { motion } from "framer-motion"
 
 export default function Home() {
 
@@ -42,11 +44,11 @@ export default function Home() {
             {/* don't remove this empty div */}
             <div className='navbar-toggled navbar hidden'></div>
             
-            <div>
-                <div ref={titleRef} className='md-display-f xs-display-n justify-between mt-8'>
+            <div className='overflow-x-hidden'>
+                <motion.div initial={{ x: -200 }} animate={{ x: 0 }} ref={titleRef} className='md-display-f xs-display-n justify-between mt-8'>
                     <p className='xl-font-xl-6 lg-font-xl-5 md-font-xl-4 custom-text font-f-code ls-0'>..</p>
                     <p className='xl-font-xl-6 lg-font-xl-5 md-font-xl-4 custom-text font-f-code ls-0'>BROKEN.</p>
-                </div>
+                </motion.div>
 
                 <div className='md-display-n xs-display-f justify-center mt-8'>
                     <p className='font-xl-2 custom-text font-f-code ls-0'>BROKEN</p>
