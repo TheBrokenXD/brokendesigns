@@ -3,7 +3,7 @@
     left: 0;
     top: 0;
     transition: $base-easing;
-    -webkit-transition: all 1s cubic-bezier(0.77,0,0.18,1);
+    -webkit-transition: $base-easing;
     z-index: 1;
     width: 100%;
     overflow: auto;

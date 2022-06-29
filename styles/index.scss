@@ -117,6 +117,53 @@
     z-index: -2;
 }
 
+// custom component
+
+@mixin new-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all .640s cubic-bezier(0.77,0,0.18,1);
+    -webkit-transition: all .640s cubic-bezier(0.77,0,0.18,1);
+    z-index: 1;
+    width: 100%;
+    overflow: auto;
+}
+
+.new-modal {
+    @include new-modal();
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+    .new-modal-content {
+        margin: auto;
+        padding: 20px;
+        width: 60%;
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+}
+
+.new-modal-hidden {
+    @include new-modal();
+    opacity: 0%;
+    transform: translate(-50%, -20%);
+    .new-modal-content {
+        margin: auto;
+        padding: 20px;
+        width: 60%;
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+}
+
 // custom breakpoints
 
 @media (max-width: 1024px) {

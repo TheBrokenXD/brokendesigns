@@ -502,11 +502,11 @@ $utilities: (
       "md": $base-font-size,
       "lg": $lg-font-size,
       "xl": $xl-font-size,
-      "xl-2": $base-font-size * 3.052,
-      "xl-3": $base-font-size * 3.815,
-      "xl-4": $base-font-size * 4.768,
-      "xl-5": $base-font-size * 5.961,
-      "xl-6": $base-font-size * 7.451
+      "xl-2": $two-xl-font-size,
+      "xl-3": $three-xl-font-size,
+      "xl-4": $four-xl-font-size,
+      "xl-5": $five-xl-font-size,
+      "xl-6": $six-xl-font-size
     )
   ),
   "font-style": (
@@ -672,7 +672,8 @@ $utilities: (
     "prefix": "shadow",
     "values": (
       "base": $base-box-shadow,
-      "extra": $extra-box-shadow
+      "extra": $extra-box-shadow,
+      "exxtra": $exxtra-box-shadow
     )
   ),
   "opacity": (
