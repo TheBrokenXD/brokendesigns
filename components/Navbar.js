@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className="nav">
 
                 <div className="nav-content">
-                    <Link href="/"><img src="/vector.svg" alt="logo" onClick={closeFunc} className='custom-text font-lg pointer svg unselectable'/></Link>
+                    <Link href="/"><img src="/vector.svg" alt="logo" className='custom-text font-lg pointer svg unselectable'/></Link>
                     <div className="display-f align-i-center">
                         <div className="nav-burger">
                             <div className="lottie" onClick={handleClick} >
