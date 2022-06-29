@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 // firebase
 import { useAuth } from '../../context/AuthContext';
 
-const userAuth = () => {
+const UserAuth = () => {
 
     const toastRef = useRef();
     const router = useRouter();
@@ -94,4 +94,4 @@ const userAuth = () => {
     );
 }
  
-export default userAuth;
+export default UserAuth;

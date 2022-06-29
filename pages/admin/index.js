@@ -7,7 +7,7 @@ import ProjectCard from "../../components/admin/ProjectCard";
 import { collection, doc, onSnapshot, setDoc } from "firebase/firestore";
 import { db } from "../../firebase/clientApp";
 
-const dashboard = () => {
+const Dashboard = () => {
 
     const { user, logout } = useAuth()
     const router = useRouter()
@@ -152,4 +152,4 @@ const dashboard = () => {
     );
 }
  
-export default dashboard;
+export default Dashboard;
