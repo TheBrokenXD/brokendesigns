@@ -5,11 +5,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // components
 import Work from '../components/Work'
 import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+// recoil
+import { useRecoilState } from 'recoil';
+// atoms
+import { designState } from "../atoms/triggerAtoms";
 
 export default function Home() {
 
     const titleRef = useRef(null);
     const [offset, setOffset] = useState(0);
+
+    const [workState, setWorkState] = useRecoilState(designState);
+
+    const clickOne = () => {
+        setWorkState("motion");
+    }
+    const clickTwo = () => {
+        setWorkState("graphic");
+    }
+    const clickThree = () => {
+        setWorkState("web");
+    }
 
     useEffect(() => {
         const onScroll = () => {
@@ -75,9 +91,9 @@ export default function Home() {
                     </div>
                     <div className='card black-bg custom-card-bg-gradient p-3 mt-4 md-display-b xs-display-n'>
                         <div className="display-f lg-justify-start xs-justify-center">
-                            <Link href="/work"><p className='font-lg custom-text custom-misc-hover'><span className='pointer unselectable'>Motion design</span></p></Link>
-                            <Link href="/work"><p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable'>Graphic design</span></p></Link>
-                            <Link href="/work"><p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable'>Web design</span></p></Link>
+                            <Link href="/work"><p className='font-lg custom-text custom-misc-hover'><span className='pointer unselectable' onClick={clickOne}>Motion design</span></p></Link>
+                            <Link href="/work"><p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable' onClick={clickTwo}>Graphic design</span></p></Link>
+                            <Link href="/work"><p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable' onClick={clickThree}>Web design</span></p></Link>
                         </div>
                     </div>
 

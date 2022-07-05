@@ -1,35 +1,53 @@
 import Head from 'next/head'
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 // components
-import Navbar from '../../components/Navbar';
 import Graphic from '../../components/showcase/Graphic';
 import Motion from '../../components/showcase/Motion';
 import Web from '../../components/showcase/Web';
+// recoil
+import { useRecoilValue } from "recoil";
+// atoms
+import { designState } from "../../atoms/triggerAtoms";
 
 const Work = () => {
     
-    const selectRef = useRef(null);
+    const selectRef = useRef();
     
-    const motion = useRef(null);
-    const graphic = useRef(null);
-    const web = useRef(null);
+    const motion = useRef();
+    const graphic = useRef();
+    const web = useRef();
+
+    const textOne = useRef();
+    const textTwo = useRef();
+    const textThree = useRef();
+
+    console.log(textOne);
 
     const filterMotion = (e) => {
         graphic.current.classList.add('hidden');
         web.current.classList.add('hidden');
         motion.current.classList.remove('hidden');
+        textOne.current.style.color = '#c4c6d0';
+        textTwo.current.style.color = '#ffffff';
+        textThree.current.style.color = '#ffffff';
     }
 
     const filterGraphic = (e) => {
         motion.current.classList.add('hidden');
         web.current.classList.add('hidden');
         graphic.current.classList.remove('hidden');
+        textOne.current.style.color = '#ffffff';
+        textTwo.current.style.color = '#c4c6d0';
+        textThree.current.style.color = '#ffffff';
     }
 
     const filterWeb = (e) => {
         motion.current.classList.add('hidden');
         graphic.current.classList.add('hidden');
         web.current.classList.remove('hidden');
+        textOne.current.style.color = '#ffffff';
+        textTwo.current.style.color = '#ffffff';
+        textThree.current.style.color = '#c4c6d0';
     }
 
     const selectChange = (e) => {
@@ -41,6 +59,18 @@ const Work = () => {
             filterWeb();
         }
     }
+
+    const design = useRecoilValue(designState);
+
+    useEffect(() => {
+        if(design === 'motion') {
+            filterMotion();
+        } else if (design === 'graphic') {
+            filterGraphic();
+        } else {
+            filterWeb();
+        }
+    }, [design]);
 
     return (
         <>
@@ -65,9 +95,9 @@ const Work = () => {
 
                     <div className='card black-bg custom-card-bg-gradient md-p-3 xs-p-1 mt-8'>
                         <div className="md-display-f xs-display-n">
-                            <p className='font-lg custom-text custom-misc-hover'><span className='pointer unselectable' onClick={filterMotion}>Motion design</span></p>
-                            <p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable' onClick={filterGraphic}>Graphic design</span></p>
-                            <p className='font-lg custom-text custom-misc-hover ml-3'><span className='pointer unselectable' onClick={filterWeb}>Web design</span></p>
+                            <p className='font-lg custom-text custom-misc-hover'><span ref={textOne} className='pointer unselectable' onClick={filterMotion}>Motion design</span></p>
+                            <p className='font-lg custom-text custom-misc-hover ml-3'><span ref={textTwo} className='pointer unselectable' onClick={filterGraphic}>Graphic design</span></p>
+                            <p className='font-lg custom-text custom-misc-hover ml-3'><span ref={textThree} className='pointer unselectable' onClick={filterWeb}>Web design</span></p>
                         </div>
                         <div className='md-display-n xs-display-f justify-center'>
                             <form>

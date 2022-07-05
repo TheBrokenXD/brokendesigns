@@ -9,6 +9,8 @@ import { AuthContextProvider } from '../context/AuthContext'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
+// recoil js
+import { RecoilRoot } from 'recoil';
 
 function MyApp({ Component, pageProps }) {
 
@@ -16,9 +18,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <AuthContextProvider>
+      <RecoilRoot>
         <Layout>
-			<Component {...pageProps} />
+		      <Component {...pageProps} />      
         </Layout>
+      </RecoilRoot>
     </AuthContextProvider>
   )
 }

@@ -356,7 +356,7 @@
 
 // your custom palette here
 
-$custom: #3774ff !default;  // your custom color
+$custom: #005ac1 !default;  // your custom color
 $custom-color: (
     "custom": $custom
 );
@@ -366,16 +366,16 @@ $custom-palette: (
     "main": #000000,
     "on-main": $custom,
     "text": #ffffff,
-    "sub-text": #f2f2f3,
-    "error": #CA195A,
-    "disabled": #535353,
+    "sub-text": #e1e2ec,
+    "error": #ffb4ab,
+    "disabled": #44474f,
     "active": #5588FF,
-    "card": #141318,
-    "hover": #202020,
-    "gray": #7d7c83,
+    "card": #1b1b1f,
+    "hover": #44474f,
+    "gray": #75777f,
     //additional
-    "notification": #3774ff,
-    "misc": #C8C8C8,
+    "notification": #004494,
+    "misc": #c4c6d0,
     // own colors
     "variant-1": #1d2228,
 );

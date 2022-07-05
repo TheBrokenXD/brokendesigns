@@ -1,7 +1,18 @@
 import Link from 'next/link';
 import Image from 'next/image';
+// recoil
+import { useRecoilState } from 'recoil';
+// atoms
+import { designState } from "../atoms/triggerAtoms";
 
 const Work = () => {
+
+    const [workState, setWorkState] = useRecoilState(designState);
+
+    const clickOne = () => {
+        setWorkState("motion");
+    }
+
     return (
         <>
             <div className="row gap-2 mt-4">
@@ -27,7 +38,7 @@ const Work = () => {
                 </div>
 
                 <div className='display-f justify-center m-auto mt-4'>
-                    <Link href='/work'><button className='custom-btn-rounded custom-text pl-5 pr-5 pt-2 pb-2'>View more</button></Link>
+                    <Link href='/work'><button className='custom-btn-rounded custom-text pl-5 pr-5 pt-2 pb-2' onClick={clickOne}>View more</button></Link>
                 </div>
             </div>
         </>
