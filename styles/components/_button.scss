@@ -11,7 +11,7 @@
     display: inline-block;
     cursor: pointer;
     outline: none;
-    transition: $base-easing;
+    transition: all .25s cubic-bezier(.79,.14,.15,.86);
     background-color: $temp;
 }
 
@@ -31,9 +31,8 @@
             transform: scale(1.06);
         }
         &:active {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-
+            -webkit-transform: scale(0.95);
+            transform: scale(0.95);
         }
     }
 
@@ -48,8 +47,8 @@
             transform: scale(1.06);
         }
         &:active {
-            -webkit-transform: scale(1);
-            transform: scale(1);
+            -webkit-transform: scale(0.95);
+            transform: scale(0.95);
         }
     }
 
@@ -63,8 +62,8 @@
             transform: scale(1.06);
         }
         &:active {
-            -webkit-transform: scale(1);
-            transform: scale(1);
+            -webkit-transform: scale(0.95);
+            transform: scale(0.95);
         }
     }
 
@@ -84,9 +83,8 @@
             transform: scale(1.06);
         }
         &:active {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-
+            -webkit-transform: scale(0.95);
+            transform: scale(0.95);
         }
     }
 
@@ -101,8 +99,8 @@
             transform: scale(1.06);
         }
         &:active {
-            -webkit-transform: scale(1);
-            transform: scale(1);
+            -webkit-transform: scale(0.95);
+            transform: scale(0.95);
         }
     }
 
@@ -116,8 +114,8 @@
             transform: scale(1.06);
         }
         &:active {
-            -webkit-transform: scale(1);
-            transform: scale(1);
+            -webkit-transform: scale(0.95);
+            transform: scale(0.95);
         }
     }
 

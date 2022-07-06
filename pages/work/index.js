@@ -1,19 +1,21 @@
 import Head from 'next/head'
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 // components
 import Graphic from '../../components/showcase/Graphic';
-import Motion from '../../components/showcase/Motion';
+import Animation from '../../components/showcase/Motion';
 import Web from '../../components/showcase/Web';
 // recoil
 import { useRecoilValue } from "recoil";
 // atoms
 import { designState } from "../../atoms/triggerAtoms";
+// framer motion
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Work = () => {
     
     const selectRef = useRef();
     
-    const motion = useRef();
+    const animation = useRef();
     const graphic = useRef();
     const web = useRef();
 
@@ -21,33 +23,38 @@ const Work = () => {
     const textTwo = useRef();
     const textThree = useRef();
 
+    const [presence, setPresence] = useState();
+
     console.log(textOne);
 
     const filterMotion = (e) => {
+        animation.current.classList.remove('hidden');
         graphic.current.classList.add('hidden');
         web.current.classList.add('hidden');
-        motion.current.classList.remove('hidden');
         textOne.current.style.color = '#c4c6d0';
         textTwo.current.style.color = '#ffffff';
         textThree.current.style.color = '#ffffff';
+        setPresence('motion');
     }
 
     const filterGraphic = (e) => {
-        motion.current.classList.add('hidden');
+        animation.current.classList.add('hidden');
         web.current.classList.add('hidden');
         graphic.current.classList.remove('hidden');
         textOne.current.style.color = '#ffffff';
         textTwo.current.style.color = '#c4c6d0';
         textThree.current.style.color = '#ffffff';
+        setPresence('graphic');
     }
 
     const filterWeb = (e) => {
-        motion.current.classList.add('hidden');
+        animation.current.classList.add('hidden');
         graphic.current.classList.add('hidden');
         web.current.classList.remove('hidden');
         textOne.current.style.color = '#ffffff';
         textTwo.current.style.color = '#ffffff';
         textThree.current.style.color = '#c4c6d0';
+        setPresence('web');
     }
 
     const selectChange = (e) => {
@@ -65,12 +72,40 @@ const Work = () => {
     useEffect(() => {
         if(design === 'motion') {
             filterMotion();
+            setPresence('motion');
         } else if (design === 'graphic') {
             filterGraphic();
+            setPresence('graphic');
         } else {
             filterWeb();
+            setPresence('web');
         }
     }, [design]);
+
+    // variants
+
+    const variants = {
+        initial: {
+            x: '50px',
+            opacity: 0,
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 0.5,
+                ease: [0.17, 0.84, 0.44, 1]
+            }
+        },
+        exit: {
+            x: '-50px',
+            opacity: 0,
+            transition: {
+                duration: 0.5,
+                ease: [0.17, 0.84, 0.44, 1]
+            }
+        }
+    }
 
     return (
         <>
@@ -95,9 +130,9 @@ const Work = () => {
 
                     <div className='card black-bg custom-card-bg-gradient md-p-3 xs-p-1 mt-8'>
                         <div className="md-display-f xs-display-n">
-                            <p className='font-lg custom-text custom-misc-hover'><span ref={textOne} className='pointer unselectable' onClick={filterMotion}>Motion design</span></p>
-                            <p className='font-lg custom-text custom-misc-hover ml-3'><span ref={textTwo} className='pointer unselectable' onClick={filterGraphic}>Graphic design</span></p>
-                            <p className='font-lg custom-text custom-misc-hover ml-3'><span ref={textThree} className='pointer unselectable' onClick={filterWeb}>Web design</span></p>
+                            <motion.p whileHover={{ opacity: 0.7, transition: { duration: 0.2 } }} className='font-lg custom-text custom-misc-hover'><span ref={textOne} className='pointer unselectable' onClick={filterMotion}>Motion design</span></motion.p>
+                            <motion.p whileHover={{ opacity: 0.7, transition: { duration: 0.2 } }} className='font-lg custom-text custom-misc-hover ml-3'><span ref={textTwo} className='pointer unselectable' onClick={filterGraphic}>Graphic design</span></motion.p>
+                            <motion.p whileHover={{ opacity: 0.7, transition: { duration: 0.2 } }} className='font-lg custom-text custom-misc-hover ml-3'><span ref={textThree} className='pointer unselectable' onClick={filterWeb}>Web design</span></motion.p>
                         </div>
                         <div className='md-display-n xs-display-f justify-center'>
                             <form>
@@ -109,21 +144,23 @@ const Work = () => {
                             </form>
                         </div>
                     </div>
+                    
+                    <AnimatePresence exitBeforeEnter>
+                        <motion.div animate={ presence == "motion" ? "animate" : "initial" } exit="exit" variants={variants} ref={animation} className='motion'>
+                            <p className='custom-text font-xl fw-md mt-4'>Motion design</p>
+                            <Animation />
+                        </motion.div>
 
-                    <div ref={motion} className='motion'>
-                        <p className='custom-text font-xl fw-md mt-4'>Motion design</p>
-                        <Motion />
-                    </div>
+                        <motion.div animate={ presence == "graphic" ? "animate" : "initial" } exit="exit" variants={variants} ref={graphic} className='graphic hidden'>
+                            <p className='custom-text font-xl fw-md mt-4'>Graphic design</p>
+                            <Graphic />
+                        </motion.div>
 
-                    <div ref={graphic} className='graphic hidden'>
-                        <p className='custom-text font-xl fw-md mt-4'>Graphic design</p>
-                        <Graphic />
-                    </div>
-
-                    <div ref={web} className='web hidden'>
-                        <p className='custom-text font-xl fw-md mt-4'>Web design</p>
-                        <Web />
-                    </div>
+                        <motion.div animate={ presence == "web" ? "animate" : "initial" } exit="exit" variants={variants} ref={web} className='web hidden'>
+                            <p className='custom-text font-xl fw-md mt-4'>Web design</p>
+                            <Web />
+                        </motion.div>
+                    </AnimatePresence>
                     
                 </div>
             </div>

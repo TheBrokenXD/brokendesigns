@@ -692,6 +692,15 @@ $utilities: (
       "100": 1,
     ),
   ),
+  "transition": (
+    "prefix": "transition",
+    "values": (
+      "base": $base-easing,
+      "harsh-1": $easing-harsh-1,
+      "harsh-2": $easing-harsh-2,
+      "bounce": $easing-bounce
+    ),
+  ),
 
   // interaction
   "cursor": (

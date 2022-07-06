@@ -29,7 +29,8 @@
 .sidebar, .sidebar-toggled {
     // background: $emerald;           // edit your sidebar color here
     background: #005ac1;
-    a {
+    span {
+        transition: $base-easing;
         &:hover {
             color: #1D1D1D;
         }

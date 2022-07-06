@@ -60,9 +60,9 @@ const Navbar = () => {
                 
                 <div ref={lottieData} className="sidebar">
                     <ul>
-                        <li><Link href="/"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}><span ref={homeRef}>Home</span></a></Link></li>
-                        <li><Link href="/work"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}><span ref={workRef}>Work</span></a></Link></li>
-                        <li><Link href="/contact"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}><span ref={contactRef}>Contact</span></a></Link></li>
+                        <li><Link href="/"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}><span ref={homeRef} className="transition-base">Home</span></a></Link></li>
+                        <li><Link href="/work"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}><span ref={workRef} className="transition-base">Work</span></a></Link></li>
+                        <li><Link href="/contact"><a className='lg-font-xl xs-font-lg custom-text unselectable' onClick={closeFunc}><span ref={contactRef} className="transition-base">Contact</span></a></Link></li>
                     </ul>
                 </div>
             </div>
